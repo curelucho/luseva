@@ -1,0 +1,45 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: 220 23% 97%;
+  --foreground: 222 43% 9%;
+  --card: 0 0% 100%;
+  --muted: 220 17% 92%;
+  --muted-foreground: 220 10% 42%;
+  --border: 220 14% 88%;
+  --primary: 187 92% 42%;
+  --primary-foreground: 222 43% 9%;
+  --accent: 262 83% 58%;
+  --accent-foreground: 0 0% 100%;
+}
+
+.dark {
+  --background: 222 43% 6%;
+  --foreground: 210 40% 96%;
+  --card: 222 35% 9%;
+  --muted: 222 24% 14%;
+  --muted-foreground: 217 14% 70%;
+  --border: 222 22% 18%;
+  --primary: 187 92% 48%;
+  --primary-foreground: 222 43% 7%;
+  --accent: 262 83% 65%;
+  --accent-foreground: 0 0% 100%;
+}
+
+* {
+  border-color: hsl(var(--border));
+}
+
+body {
+  min-height: 100vh;
+  background: hsl(var(--background));
+  color: hsl(var(--foreground));
+  font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+}
+
+button,
+a {
+  -webkit-tap-highlight-color: transparent;
+}
